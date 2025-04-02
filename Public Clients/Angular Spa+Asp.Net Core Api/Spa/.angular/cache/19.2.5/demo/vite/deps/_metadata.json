@@ -1,0 +1,61 @@
+{
+  "hash": "69bbb8f5",
+  "configHash": "8a5f1340",
+  "lockfileHash": "26653cd3",
+  "browserHash": "f8fcb6ee",
+  "optimized": {
+    "@angular/common": {
+      "src": "../../../../../../node_modules/@angular/common/fesm2022/common.mjs",
+      "file": "@angular_common.js",
+      "fileHash": "c301c4b6",
+      "needsInterop": false
+    },
+    "@angular/core": {
+      "src": "../../../../../../node_modules/@angular/core/fesm2022/core.mjs",
+      "file": "@angular_core.js",
+      "fileHash": "9e73c3e8",
+      "needsInterop": false
+    },
+    "@angular/platform-browser": {
+      "src": "../../../../../../node_modules/@angular/platform-browser/fesm2022/platform-browser.mjs",
+      "file": "@angular_platform-browser.js",
+      "fileHash": "a1cd4bad",
+      "needsInterop": false
+    },
+    "@angular/router": {
+      "src": "../../../../../../node_modules/@angular/router/fesm2022/router.mjs",
+      "file": "@angular_router.js",
+      "fileHash": "2f266219",
+      "needsInterop": false
+    },
+    "angular-auth-oidc-client": {
+      "src": "../../../../../../node_modules/angular-auth-oidc-client/fesm2022/angular-auth-oidc-client.mjs",
+      "file": "angular-auth-oidc-client.js",
+      "fileHash": "5b37c243",
+      "needsInterop": false
+    },
+    "rxjs/operators": {
+      "src": "../../../../../../node_modules/rxjs/dist/esm5/operators/index.js",
+      "file": "rxjs_operators.js",
+      "fileHash": "c357ef31",
+      "needsInterop": false
+    }
+  },
+  "chunks": {
+    "chunk-VOT7PYLI": {
+      "file": "chunk-VOT7PYLI.js"
+    },
+    "chunk-W7FQZHI4": {
+      "file": "chunk-W7FQZHI4.js"
+    },
+    "chunk-EY3YD5SR": {
+      "file": "chunk-EY3YD5SR.js"
+    },
+    "chunk-KPWGKLSI": {
+      "file": "chunk-KPWGKLSI.js"
+    },
+    "chunk-4O3VSWRD": {
+      "file": "chunk-4O3VSWRD.js"
+    }
+  }
+}
