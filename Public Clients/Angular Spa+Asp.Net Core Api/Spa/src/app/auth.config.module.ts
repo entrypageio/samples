@@ -9,10 +9,11 @@ import { AuthModule, LogLevel } from 'angular-auth-oidc-client';
             config: {
                 authority: 'https://localhost:5555',
                 redirectUrl: window.location.origin,
+                postLogoutRedirectUri: window.location.origin,
                 clientId: 'demo-entrypage-io',
                 scope: 'openid profile email',
                 responseType: 'code',
-                secureRoutes: ['https://localhost:7128'], // adds tokens to the request
+                secureRoutes: ['https://localhost:7128'],
                 logLevel: LogLevel.Debug,
             }
         })

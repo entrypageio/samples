@@ -44,8 +44,11 @@
 }
 
 .pill-group svg {
+    margin-top: 35px;
     margin-inline-start: 0.25rem;
 }
+
+.pointer { cursor: pointer; }
 
 .logo {
     width: 75px;

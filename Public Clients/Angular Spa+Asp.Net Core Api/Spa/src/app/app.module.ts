@@ -1,11 +1,12 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule } from '@angular/router';
-import { EventTypes, PublicEventsService } from 'angular-auth-oidc-client';
+import {authInterceptor, EventTypes, PublicEventsService} from 'angular-auth-oidc-client';
 import { filter } from 'rxjs/operators';
 import { AppComponent } from './app.component';
 import {HomeComponent} from "./Home/home.component";
 import {AuthConfigModule} from "./auth.config.module";
+import {provideHttpClient, withInterceptors} from "@angular/common/http";
 
 
 @NgModule({
@@ -18,7 +19,7 @@ import {AuthConfigModule} from "./auth.config.module";
         ]),
         AuthConfigModule,
     ],
-    providers: [],
+    providers: [provideHttpClient(withInterceptors([authInterceptor()]))],
     bootstrap: [AppComponent],
 })
 export class AppModule {

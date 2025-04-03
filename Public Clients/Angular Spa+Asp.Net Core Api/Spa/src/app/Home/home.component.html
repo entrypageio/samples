@@ -1,7 +1,22 @@
 <div class="left-side">
-    <img src="/logo.png" class="logo" />
-    <h1>Angular Demo</h1>
-    <p>Your Entrypage Angular Demo App is running. 🎉</p>
-    <p>You're not signed in yet.</p>
-    <p><a class="pill sign-in" target="_blank" rel="noopener" (click)="signin()">Sign in</a></p>
+    <div *ngIf="userData$ | async as userData">
+        <img src="/logo.png" class="logo" />
+        <div *ngIf="userData.userData">
+            <h1>Welcome, {{userData.userData["nickname"]}}!</h1>
+            <p>You've successfully signed in. 🎉</p>
+            
+            <div class="pill-group">
+                <a class="pill pointer" target="_blank" rel="noopener" (click)="makeApiCall()">Make an API-call</a>
+                <a class="pill pointer" target="_blank" rel="noopener" (click)="signout()">Sign out</a>
+            </div>
+        </div>
+        <div *ngIf="!userData.userData">
+            <h1>Angular Demo</h1>
+            <p>Your Entrypage Angular Demo App is running. 🎉</p>
+            <p>You're not signed in yet.</p>
+            <p>
+                <a class="pill sign-in" target="_blank" rel="noopener" (click)="signin()">Sign in</a>
+            </p>
+        </div>
+    </div>
 </div>
