@@ -21,7 +21,7 @@ builder.Services
     .AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
     .AddJwtBearer(options =>
     {
-        options.Authority = "https://localhost:5555";
+        options.Authority = "https://example.sandbox.entrypage.io";
         options.Audience = "api-demo-entrypage-io";
         options.TokenValidationParameters = new TokenValidationParameters
         {
