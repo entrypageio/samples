@@ -1,6 +1,6 @@
 # Entrypage Samples
 
-This repository demonstrates various ways to implement Entrypage in bespoke applications. As with any OAuth implementation, it is important to obtain tokens in the appropriate manner and validate them properly.
+This repository demonstrates various ways to implement [Entrypage.io](https://www.entrypage.io) in bespoke applications. As with any OAuth implementation, it is important to obtain tokens in the appropriate manner and validate them properly.
 
 Entrypage is a Single Sign-On server. That means:
 - People are signed in to an Entrypage and have a session there
