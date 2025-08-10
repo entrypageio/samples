@@ -7,7 +7,7 @@ import { AuthModule, LogLevel } from 'angular-auth-oidc-client';
         CommonModule,
         AuthModule.forRoot({
             config: {
-                authority: 'https://localhost:5555',
+                authority: 'https://example.sandbox.entrypage.io',
                 redirectUrl: window.location.origin,
                 postLogoutRedirectUri: window.location.origin,
                 clientId: 'demo-entrypage-io',
