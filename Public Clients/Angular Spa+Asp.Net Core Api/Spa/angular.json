@@ -58,7 +58,6 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "ssl": true,
             "port": 4200,
             "open": true
           },

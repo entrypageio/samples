@@ -1,9 +1,11 @@
 <div class="left-side">
     <div *ngIf="userData$ | async as userData">
-        <img src="/logo.png" class="logo" />
+        <img src="/logo.png" class="logo" height="75"/>
         <div *ngIf="userData.userData">
             <h1>Welcome, {{userData.userData["nickname"]}}!</h1>
             <p>You've successfully signed in. 🎉</p>
+
+            <pre *ngIf="userData">{{ JSON.stringify(userData.userData, null, 2) }}</pre>
             
             <div class="pill-group">
                 <a class="pill pointer" target="_blank" rel="noopener" (click)="makeApiCall()">Make an API-call</a>
